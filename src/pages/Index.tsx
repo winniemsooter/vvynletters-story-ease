@@ -1,12 +1,44 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navigation } from "@/components/Navigation";
+import { HeroSection } from "@/components/HeroSection";
+import { AboutSection } from "@/components/AboutSection";
+import { ServicesSection } from "@/components/ServicesSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
+import { PerfectForSection } from "@/components/PerfectForSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Navigation />
+      
+      <main>
+        <div id="hero">
+          <HeroSection />
+        </div>
+        
+        <div id="about">
+          <AboutSection />
+        </div>
+        
+        <div id="services">
+          <ServicesSection />
+        </div>
+        
+        <div id="testimonials">
+          <TestimonialsSection />
+        </div>
+        
+        <div id="perfect-for">
+          <PerfectForSection />
+        </div>
+        
+        <div id="contact">
+          <ContactSection />
+        </div>
+      </main>
+      
+      <Footer />
     </div>
   );
 };
