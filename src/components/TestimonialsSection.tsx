@@ -4,23 +4,23 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     text: "Quick update - I decided to commit to UC Davis since I was accepted on SCHOLARSHIP! Thank you so much for weathering the storm with me - may you continue to be blessed in all that you do.",
-    client: "Client A"
+    client: "Oluoma"
   },
   {
     text: "Please excuse the delayed response, I slept in late this morning. I have read over the manuscript and I am very pleased. I will definitely be using your services again, and will recommend others for your excellent prompt customer service.",
-    client: "Client B"
+    client: "Kurt"
   },
   {
     text: "Winifred is a very hard-working individual. I enjoyed working with her and she has a positive attitude and is great to deal with.",
-    client: "Client C"
+    client: "Mike"
   },
   {
     text: "Quick update, scaled through the first round of the MBA application at Saïd Business School, Oxford, I have an interview scheduled on the 1st of July. Thanks for your help!",
-    client: "Client D"
+    client: "Theodore"
   },
   {
     text: "Guess who got into Cornell? Me!!! Thank you so much for your help with over 34 essays; it paid off, we did it! I got three other acceptances, but I'll be going to Cornell. Thanks!!",
-    client: "Client E"
+    client: "Jennifer"
   }
 ];
 
