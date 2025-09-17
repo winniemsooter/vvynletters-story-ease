@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 export const Navigation = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   const scrollToSection = (sectionId: string) => {
+    if (!isHomePage) {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -14,12 +22,12 @@ export const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <button 
-              onClick={() => scrollToSection('hero')}
+            <Link 
+              to="/"
               className="text-2xl font-bold text-primary hover:opacity-80 transition-opacity"
             >
               vvynletters
-            </button>
+            </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -41,6 +49,12 @@ export const Navigation = () => {
             >
               Testimonials
             </button>
+            <Link 
+              to="/blog"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
             <button 
               onClick={() => scrollToSection('contact')}
               className="text-muted-foreground hover:text-foreground transition-colors"
