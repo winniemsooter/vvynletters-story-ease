@@ -1,0 +1,1 @@
+export { wordpressService, WordPressService } from './wordpress';
