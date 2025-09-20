@@ -13,22 +13,20 @@ export const HeroSection = () => {
                 <span className="text-primary">vvynletters</span>
                 <br />
                 <span className="text-foreground">
-                  storytelling meets purpose
+                  storytelling meets purpose!
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground">
-                At vvynletters, we bring together storytelling and micro–mental
-                health support, whether you're applying to medical school,
-                navigating ADHD entrepreneurship, or carrying the weight of a
-                creative big idea.
+                With the ease we bring you can make room for more brilliance!
               </p>
             </div>
 
             <div className="space-y-6">
               <p className="text-xl text-muted-foreground leading-relaxed">
-                With the ease we bring, you can make room for more brilliance!
-                Every story is a mind at work—we help you shape those stories
-                into pathways of success and ease.
+                Every story is a mind at work. Some are heavy with self-doubt, others are fueled by resilience — but all deserve to be heard. At vvynletters, we help you shape those stories into pathways of success and ease.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                We bring together storytelling and micro–mental health support, so whether you're applying to medical school for the third time, navigating the overwhelm of ADHD entrepreneurship, or carrying the weight of a creative big idea, you don't have to do it alone.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">

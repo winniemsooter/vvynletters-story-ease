@@ -82,11 +82,10 @@ const Blog = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center space-y-6">
               <h1 className="text-4xl lg:text-5xl font-bold text-foreground">
-                Stories & Insights
+                Blog
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Explore our collection of stories, insights, and resources on storytelling, 
-                mental health support, and creative entrepreneurship.
+                Raw letters on burnout, living & healing, the human experience, and the psychology of storytelling.
               </p>
             </div>
           </div>

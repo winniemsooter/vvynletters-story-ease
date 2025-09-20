@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { Quote } from "lucide-react";
 
 const testimonials = [
@@ -29,7 +30,7 @@ export const TestimonialsSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Success Stories</h2>
+          <h2 className="text-4xl font-bold mb-4">What our clients say</h2>
           <p className="text-xl text-muted-foreground">
             Real results from real clients who trusted us with their stories
           </p>
@@ -57,6 +58,18 @@ export const TestimonialsSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+        
+        <div className="text-center mt-16">
+          <Button
+            size="lg"
+            className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant"
+            asChild
+          >
+            <a href="mailto:vvynletter@gmail.com">
+              Work with us
+            </a>
+          </Button>
         </div>
       </div>
     </section>

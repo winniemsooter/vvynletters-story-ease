@@ -13,11 +13,12 @@ export const ContactSection = () => {
     <section className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Ready to Begin?</h2>
+          <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Whether you're applying to med school, building a business with
-            ADHD, or carrying a story that needs to be told — every service is
-            built to bring ease for better outcomes.
+            ADHD, or carrying a story that needs to be told — at vvynletters, every service is
+            built to bring ease for better outcomes. If you're ready to work with someone who understands both pressure
+            and psychology, reach out.
           </p>
         </div>
 
@@ -89,30 +90,13 @@ export const ContactSection = () => {
                 asChild
               >
                 <a href="#" rel="noopener noreferrer">
-                  Start Form
+                  Start Here →
                 </a>
               </Button>
             </CardContent>
           </Card>
         </div>
 
-        <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-4">
-            If you're ready to work with someone who understands both pressure
-            and psychology, reach out.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <Mail className="h-4 w-4" />
-              <a
-                href="mailto:vvynletter@gmail.com"
-                className="hover:text-primary transition-colors"
-              >
-                vvynletter@gmail.com
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

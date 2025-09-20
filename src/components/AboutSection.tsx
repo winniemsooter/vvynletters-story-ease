@@ -9,15 +9,15 @@ export const AboutSection = () => {
           
           <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
             <p>
-              I'm <strong className="text-foreground">Winifred Liam</strong> — a PsyD professional-in-training and a creative strategist with over half a decade of experience supporting ADHD founders and entrepreneurs. I am building a startup in corporate micro-mental health, designed to deliver quick, impactful mental health interventions that restore clarity and resilience in the workplace.
+              <strong className="text-foreground">Winifred Liam</strong> is a storyteller and communications strategist with over five years' experience transforming complex ideas into narratives that inspire action. Her career bridges applied psychology, humanitarian service, and brand communications — from coordinating child protection programs in Nigeria to amplifying creative voices through international arts journalism and shaping brand narratives for global fashion houses.
             </p>
             
             <p>
-              My work lives at the intersection of storytelling and psychology, where creativity and strategy meet to bring ease to people who often operate in overdrive — scholars, founders, and creatives. I translate complexity into clarity, helping high-capacity individuals find grounding without losing their edge.
+              Currently pursuing a BSc in Applied Psychology and on the path to a PsyD, she explores how storytelling can serve as micro–mental health support: everyday practices that ease stress, untangle thoughts, and foster clarity. Through vvynletters, Winifred unites her expertise in story and psychology to offer courses, consulting, and reflections that help people write their way into ease and growth.
             </p>
             
             <p>
-              vvynletters is part of that practice: a therapeutic process and creative offering that invites people to slow down, work with what truly matters, and release the pressure of constant striving. It's about being seen as you reach for what you're capable of — in business, academia, and creative life.
+              Her work creativity and strategy meet to bring ease to people who often operate in overdrive — scholars, founders, and creatives.
             </p>
           </div>
         </div>
