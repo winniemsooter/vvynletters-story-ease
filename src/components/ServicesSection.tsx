@@ -54,7 +54,7 @@ export const ServicesSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">What we do</h2>
-          <p className="text-xl font-century text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl font-avenir text-muted-foreground max-w-2xl mx-auto">
             Comprehensive support at the intersection of storytelling, psychology, and creative strategy
           </p>
         </div>
@@ -69,7 +69,7 @@ export const ServicesSection = () => {
                 </div>
                 <h3 className="text-3xl font-playfair font-bold text-foreground mb-3">{category.category}</h3>
                 {category.subtitle && (
-                  <p className="text-lg font-century text-muted-foreground max-w-2xl mx-auto">{category.subtitle}</p>
+                  <p className="text-lg font-avenir text-muted-foreground max-w-2xl mx-auto">{category.subtitle}</p>
                 )}
               </div>
               
@@ -93,7 +93,7 @@ export const ServicesSection = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="font-century text-muted-foreground leading-relaxed text-base">
+                      <CardDescription className="font-avenir text-muted-foreground leading-relaxed text-base">
                         {service.description}
                       </CardDescription>
                     </CardContent>
@@ -115,13 +115,13 @@ export const ServicesSection = () => {
         <div className="text-center mt-20">
           <div className="max-w-2xl mx-auto mb-8">
             <h3 className="text-2xl font-playfair font-bold mb-4">Ready to transform your story?</h3>
-            <p className="font-century text-muted-foreground leading-relaxed">
+            <p className="font-avenir text-muted-foreground leading-relaxed">
               Whether you're applying to medical school, building a business with ADHD, or carrying a story that needs to be told — we're here to help you find clarity and success.
             </p>
           </div>
           <Button
             size="lg"
-            className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant px-8 py-3 text-lg font-century"
+            className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant px-8 py-3 text-lg font-avenir"
             asChild
           >
             <a href="mailto:vvynletter@gmail.com">

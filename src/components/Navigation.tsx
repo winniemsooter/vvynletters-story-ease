@@ -45,31 +45,31 @@ export const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
-              className="font-century text-muted-foreground hover:text-foreground transition-colors"
+              className="font-avenir text-muted-foreground hover:text-foreground transition-colors"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('services')}
-              className="font-century text-muted-foreground hover:text-foreground transition-colors"
+              className="font-avenir text-muted-foreground hover:text-foreground transition-colors"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
-              className="font-century text-muted-foreground hover:text-foreground transition-colors"
+              className="font-avenir text-muted-foreground hover:text-foreground transition-colors"
             >
               Testimonials
             </button>
             <Link 
               to="/blog"
-              className="font-century text-muted-foreground hover:text-foreground transition-colors"
+              className="font-avenir text-muted-foreground hover:text-foreground transition-colors"
             >
               Blog
             </Link>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="font-century text-muted-foreground hover:text-foreground transition-colors"
+              className="font-avenir text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact
             </button>
@@ -79,7 +79,7 @@ export const Navigation = () => {
           <div className="hidden md:block">
             <Button 
               size="sm" 
-              className="bg-gradient-primary hover:opacity-90 transition-smooth font-century"
+              className="bg-gradient-primary hover:opacity-90 transition-smooth font-avenir"
               asChild
             >
               <a href="https://cal.com/vvynletters" target="_blank" rel="noopener noreferrer">
@@ -109,39 +109,39 @@ export const Navigation = () => {
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button 
                 onClick={() => scrollToSection('about')}
-                className="block px-3 py-2 text-base font-century text-muted-foreground hover:text-foreground transition-colors w-full text-left"
+                className="block px-3 py-2 text-base font-avenir text-muted-foreground hover:text-foreground transition-colors w-full text-left"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('services')}
-                className="block px-3 py-2 text-base font-century text-muted-foreground hover:text-foreground transition-colors w-full text-left"
+                className="block px-3 py-2 text-base font-avenir text-muted-foreground hover:text-foreground transition-colors w-full text-left"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
-                className="block px-3 py-2 text-base font-century text-muted-foreground hover:text-foreground transition-colors w-full text-left"
+                className="block px-3 py-2 text-base font-avenir text-muted-foreground hover:text-foreground transition-colors w-full text-left"
               >
                 Testimonials
               </button>
               <Link 
                 to="/blog"
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-3 py-2 text-base font-century text-muted-foreground hover:text-foreground transition-colors"
+                className="block px-3 py-2 text-base font-avenir text-muted-foreground hover:text-foreground transition-colors"
               >
                 Blog
               </Link>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="block px-3 py-2 text-base font-century text-muted-foreground hover:text-foreground transition-colors w-full text-left"
+                className="block px-3 py-2 text-base font-avenir text-muted-foreground hover:text-foreground transition-colors w-full text-left"
               >
                 Contact
               </button>
               <div className="px-3 py-2">
                 <Button 
                   size="sm" 
-                  className="bg-gradient-primary hover:opacity-90 transition-smooth font-century w-full"
+                  className="bg-gradient-primary hover:opacity-90 transition-smooth font-avenir w-full"
                   asChild
                 >
                   <a href="https://cal.com/vvynletters" target="_blank" rel="noopener noreferrer">

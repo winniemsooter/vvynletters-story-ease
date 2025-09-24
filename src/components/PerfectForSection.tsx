@@ -25,7 +25,7 @@ export const PerfectForSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">Perfect For</h2>
-          <p className="text-xl font-century text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl font-avenir text-muted-foreground max-w-2xl mx-auto">
             We work with high-capacity individuals who are ready to transform pressure into purpose
           </p>
         </div>
@@ -40,7 +40,7 @@ export const PerfectForSection = () => {
                 <CardTitle className="text-xl font-playfair">{audience.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="font-century text-muted-foreground leading-relaxed">
+                <CardDescription className="font-avenir text-muted-foreground leading-relaxed">
                   {audience.description}
                 </CardDescription>
               </CardContent>

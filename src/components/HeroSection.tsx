@@ -20,8 +20,8 @@ export const HeroSection = () => {
             <h1 className="text-5xl lg:text-7xl font-playfair font-bold leading-tight">
               <span className="text-primary">VVYNLETTERS</span>
               <br />
-              <span className="text-foreground font-century">
-                storytelling meets purpose!
+              <span className="text-foreground font-avenir">
+                Storytelling Meets Purpose!
               </span>
             </h1>
           </div>
@@ -31,13 +31,13 @@ export const HeroSection = () => {
               <h2 className="text-2xl lg:text-3xl font-playfair font-semibold text-primary">
                 At VVYNLETTERS
               </h2>
-              <p className="text-xl font-century text-muted-foreground leading-relaxed">
+              <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
                 We provide executive and administrative virtual support for ADHD founders, creatives, and entrepreneurs.
               </p>
-              <p className="text-xl font-century text-muted-foreground leading-relaxed">
+              <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
                 We provide expert storytelling services for high-impact: assist you with your applications, write your medical school essays, grant proposals, and nonfiction manuscripts.
               </p>
-              <p className="text-lg font-century text-muted-foreground leading-relaxed">
+              <p className="text-lg font-avenir text-muted-foreground leading-relaxed">
                 We combine storytelling and micro-mental health support to bring ease to your process.
               </p>
             </div>
@@ -45,7 +45,7 @@ export const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
               <Button
                 size="lg"
-                className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant font-century text-lg px-8 py-4"
+                className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant font-avenir text-lg px-8 py-4"
                 asChild
               >
                 <a
@@ -61,7 +61,7 @@ export const HeroSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth font-century text-lg px-8 py-4"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth font-avenir text-lg px-8 py-4"
                 asChild
               >
                 <a href="mailto:vvynletter@gmail.com">

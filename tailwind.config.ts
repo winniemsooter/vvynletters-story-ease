@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
-        'century': ['Century Gothic', 'Futura', 'Arial', 'sans-serif'],
+        'avenir': ['Avenir', 'Avenir Next', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
