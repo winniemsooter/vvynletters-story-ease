@@ -53,8 +53,8 @@ export const ServicesSection = () => {
     <section className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">What we do</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">What we do</h2>
+          <p className="text-xl font-century text-muted-foreground max-w-2xl mx-auto">
             Comprehensive support at the intersection of storytelling, psychology, and creative strategy
           </p>
         </div>
@@ -67,9 +67,9 @@ export const ServicesSection = () => {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-primary rounded-full mb-6">
                   <span className="text-2xl font-bold text-white">{categoryIndex + 1}</span>
                 </div>
-                <h3 className="text-3xl font-bold text-foreground mb-3">{category.category}</h3>
+                <h3 className="text-3xl font-playfair font-bold text-foreground mb-3">{category.category}</h3>
                 {category.subtitle && (
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">{category.subtitle}</p>
+                  <p className="text-lg font-century text-muted-foreground max-w-2xl mx-auto">{category.subtitle}</p>
                 )}
               </div>
               
@@ -88,12 +88,12 @@ export const ServicesSection = () => {
                           </div>
                         )}
                       </div>
-                      <CardTitle className="text-xl leading-tight group-hover:text-primary transition-colors duration-300">
+                      <CardTitle className="text-xl font-playfair leading-tight group-hover:text-primary transition-colors duration-300">
                         {service.title}
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="text-muted-foreground leading-relaxed text-base">
+                      <CardDescription className="font-century text-muted-foreground leading-relaxed text-base">
                         {service.description}
                       </CardDescription>
                     </CardContent>
@@ -114,14 +114,14 @@ export const ServicesSection = () => {
         {/* Single CTA at the bottom */}
         <div className="text-center mt-20">
           <div className="max-w-2xl mx-auto mb-8">
-            <h3 className="text-2xl font-bold mb-4">Ready to transform your story?</h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <h3 className="text-2xl font-playfair font-bold mb-4">Ready to transform your story?</h3>
+            <p className="font-century text-muted-foreground leading-relaxed">
               Whether you're applying to medical school, building a business with ADHD, or carrying a story that needs to be told — we're here to help you find clarity and success.
             </p>
           </div>
           <Button
             size="lg"
-            className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant px-8 py-3 text-lg"
+            className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant px-8 py-3 text-lg font-century"
             asChild
           >
             <a href="mailto:vvynletter@gmail.com">

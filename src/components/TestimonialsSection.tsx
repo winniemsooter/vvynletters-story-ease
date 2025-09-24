@@ -30,8 +30,8 @@ export const TestimonialsSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">What our clients say</h2>
-          <p className="text-xl text-muted-foreground">
+          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">What our clients say</h2>
+          <p className="text-xl font-century text-muted-foreground">
             Real results from real clients who trusted us with their stories
           </p>
         </div>
@@ -47,10 +47,10 @@ export const TestimonialsSection = () => {
                     </div>
                   </div>
                   <div className="space-y-4">
-                    <CardDescription className="text-muted-foreground leading-relaxed italic">
+                    <CardDescription className="font-century text-muted-foreground leading-relaxed italic">
                       "{testimonial.text}"
                     </CardDescription>
-                    <div className="text-sm font-medium text-primary">
+                    <div className="text-sm font-century font-medium text-primary">
                       — {testimonial.client}
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export const TestimonialsSection = () => {
         <div className="text-center mt-16">
           <Button
             size="lg"
-            className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant"
+            className="bg-gradient-primary hover:opacity-90 transition-smooth shadow-elegant font-century"
             asChild
           >
             <a href="mailto:vvynletter@gmail.com">

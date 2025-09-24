@@ -13,10 +13,10 @@ export const ContactSection = () => {
     <section className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Contact Us</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">Contact Us</h2>
+          <p className="text-xl font-century text-muted-foreground max-w-2xl mx-auto">
             Whether you're applying to med school, building a business with
-            ADHD, or carrying a story that needs to be told — at vvynletters, every service is
+            ADHD, or carrying a story that needs to be told — at VVYNLETTERS, every service is
             built to bring ease for better outcomes. If you're ready to work with someone who understands both pressure
             and psychology, reach out.
           </p>
@@ -28,15 +28,15 @@ export const ContactSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Calendar className="h-8 w-8 text-white" />
               </div>
-              <CardTitle>Book a Consultation</CardTitle>
-              <CardDescription>
+              <CardTitle className="font-playfair">Book a Consultation</CardTitle>
+              <CardDescription className="font-century">
                 Schedule a free 15-minute discovery call to discuss your needs
               </CardDescription>
             </CardHeader>
             <CardContent className="mt-auto">
               <Button
                 size="lg"
-                className="w-full bg-gradient-primary hover:opacity-90 transition-smooth"
+                className="w-full bg-gradient-primary hover:opacity-90 transition-smooth font-century"
                 asChild
               >
                 <a
@@ -55,8 +55,8 @@ export const ContactSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-8 w-8 text-white" />
               </div>
-              <CardTitle>Email Direct</CardTitle>
-              <CardDescription>
+              <CardTitle className="font-playfair">Email Direct</CardTitle>
+              <CardDescription className="font-century">
                 Prefer email? Send us a message with your project details
               </CardDescription>
             </CardHeader>
@@ -64,7 +64,7 @@ export const ContactSection = () => {
               <Button
                 size="lg"
                 variant="outline"
-                className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+                className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth font-century"
                 asChild
               >
                 <a href="mailto:vvynletter@gmail.com">Send Email</a>
@@ -77,8 +77,8 @@ export const ContactSection = () => {
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                 <FileText className="h-8 w-8 text-white" />
               </div>
-              <CardTitle>Start Here Form</CardTitle>
-              <CardDescription>
+              <CardTitle className="font-playfair">Start Here Form</CardTitle>
+              <CardDescription className="font-century">
                 Fill out our intake form to get matched with the right service
               </CardDescription>
             </CardHeader>
@@ -86,7 +86,7 @@ export const ContactSection = () => {
               <Button
                 size="lg"
                 variant="secondary"
-                className="w-full transition-smooth"
+                className="w-full transition-smooth font-century"
                 asChild
               >
                 <a href="#" rel="noopener noreferrer">

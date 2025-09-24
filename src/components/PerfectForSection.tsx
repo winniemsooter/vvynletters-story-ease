@@ -24,8 +24,8 @@ export const PerfectForSection = () => {
     <section className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Perfect For</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">Perfect For</h2>
+          <p className="text-xl font-century text-muted-foreground max-w-2xl mx-auto">
             We work with high-capacity individuals who are ready to transform pressure into purpose
           </p>
         </div>
@@ -37,10 +37,10 @@ export const PerfectForSection = () => {
                 <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4">
                   <audience.icon className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-xl">{audience.title}</CardTitle>
+                <CardTitle className="text-xl font-playfair">{audience.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-muted-foreground leading-relaxed">
+                <CardDescription className="font-century text-muted-foreground leading-relaxed">
                   {audience.description}
                 </CardDescription>
               </CardContent>
