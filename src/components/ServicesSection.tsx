@@ -28,7 +28,7 @@ const serviceCategories = [
         icon: BookOpen,
         title: "Nonfiction Ghostwriting for Healing & Legacy",
         description: "Turning lived experiences into memoirs, books, and writing that preserve truth and foster healing.",
-        highlight: "ghostwritten over 30 nonfiction works"
+        highlight: "Ghostwrote 30+ nonfiction books"
       },
       {
         icon: Lightbulb,
@@ -87,7 +87,7 @@ export const ServicesSection = () => {
                           <service.icon className="h-7 w-7 text-white" />
                         </div>
                         {service.highlight && (
-                          <div className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium border border-primary/20">
+                          <div className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium border border-primary/20 ml-3">
                             {service.highlight}
                           </div>
                         )}
