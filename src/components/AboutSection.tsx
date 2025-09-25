@@ -23,15 +23,15 @@ export const AboutSection = () => {
             
             <div className="space-y-8 order-1 lg:order-2">
               <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
-                <strong className="text-foreground font-playfair text-2xl">Winifred Liam</strong> is a storyteller and communications strategist with over five years' experience transforming complex ideas into narratives that inspire action. Her career bridges applied psychology, humanitarian service, and brand communications — from coordinating child protection programs in Nigeria to amplifying creative voices through international arts journalism and shaping brand narratives for global fashion houses.
+                <strong className="text-foreground font-playfair text-2xl">Winifred Liam</strong> is a storyteller and communications strategist with over five years of experience shaping narratives that inspire action. Her work spans psychology, humanitarian service, and brand communications — from being an Editor at an Art Tech company to crafting stories for global fashion houses.
               </p>
               
               <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
-                Currently pursuing a BSc in Applied Psychology and on the path to a PsyD, she explores how storytelling can serve as micro–mental health support: everyday practices that ease stress, untangle thoughts, and foster clarity. Through VVYNLETTERS, Winifred unites her expertise in story and psychology to offer courses, consulting, and reflections that help people write their way into ease and growth.
+                Currently studying Applied Psychology and on the path to a PsyD, she explores storytelling as a form of micro–mental health support: everyday practices that ease stress, bring clarity, and spark growth.
               </p>
               
               <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
-                Her work creativity and strategy meet to bring ease to people who often operate in overdrive — scholars, founders, and creatives.
+                Through WYNLETTERS, Winifred brings together her expertise in story and psychology to offer services, workshops, consulting, and virtual support to help scholars, founders, and creatives slow down, find rhythm, and thrive.
               </p>
             </div>
           </div>
