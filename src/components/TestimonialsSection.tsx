@@ -30,27 +30,27 @@ export const TestimonialsSection = () => {
     <section className="py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">What our clients say</h2>
+          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">What Our Clients Say</h2>
           <p className="text-xl font-avenir text-muted-foreground">
             Real results from real clients who trusted us with their stories
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="border-0 shadow-soft hover:shadow-elegant transition-smooth bg-card/80 backdrop-blur-sm">
-              <CardContent className="p-6">
+              <CardContent className="p-8">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Quote className="h-4 w-4 text-primary" />
+                    <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                      <Quote className="h-5 w-5 text-primary" />
                     </div>
                   </div>
                   <div className="space-y-4">
-                    <CardDescription className="font-avenir text-muted-foreground leading-relaxed italic">
+                    <CardDescription className="font-avenir text-muted-foreground leading-relaxed italic text-lg">
                       "{testimonial.text}"
                     </CardDescription>
-                    <div className="text-sm font-avenir font-medium text-primary">
+                    <div className="text-base font-avenir font-medium text-primary">
                       — {testimonial.client}
                     </div>
                   </div>

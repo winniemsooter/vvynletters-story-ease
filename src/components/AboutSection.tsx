@@ -6,7 +6,7 @@ export const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl lg:text-5xl font-playfair font-bold text-center mb-16">
-            The mind behind <span className="text-primary">VVYNLETTERS</span>
+            The Mind Behind <span className="text-primary">VVYNLETTERS</span>
           </h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -21,16 +21,16 @@ export const AboutSection = () => {
               </div>
             </div>
             
-            <div className="space-y-6 order-1 lg:order-2">
-              <p className="text-lg font-avenir text-muted-foreground leading-relaxed">
-                <strong className="text-foreground font-playfair text-xl">Winifred Liam</strong> is a storyteller and communications strategist with over five years' experience transforming complex ideas into narratives that inspire action. Her career bridges applied psychology, humanitarian service, and brand communications — from coordinating child protection programs in Nigeria to amplifying creative voices through international arts journalism and shaping brand narratives for global fashion houses.
+            <div className="space-y-8 order-1 lg:order-2">
+              <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
+                <strong className="text-foreground font-playfair text-2xl">Winifred Liam</strong> is a storyteller and communications strategist with over five years' experience transforming complex ideas into narratives that inspire action. Her career bridges applied psychology, humanitarian service, and brand communications — from coordinating child protection programs in Nigeria to amplifying creative voices through international arts journalism and shaping brand narratives for global fashion houses.
               </p>
               
-              <p className="text-lg font-avenir text-muted-foreground leading-relaxed">
+              <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
                 Currently pursuing a BSc in Applied Psychology and on the path to a PsyD, she explores how storytelling can serve as micro–mental health support: everyday practices that ease stress, untangle thoughts, and foster clarity. Through VVYNLETTERS, Winifred unites her expertise in story and psychology to offer courses, consulting, and reflections that help people write their way into ease and growth.
               </p>
               
-              <p className="text-lg font-avenir text-muted-foreground leading-relaxed">
+              <p className="text-xl font-avenir text-muted-foreground leading-relaxed">
                 Her work creativity and strategy meet to bring ease to people who often operate in overdrive — scholars, founders, and creatives.
               </p>
             </div>

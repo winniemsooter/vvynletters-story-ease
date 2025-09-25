@@ -4,22 +4,7 @@ import { GraduationCap, BookOpen, Brain, Lightbulb, Users } from "lucide-react";
 
 const serviceCategories = [
   {
-    category: "Story for Self",
-    services: [
-      {
-        icon: BookOpen,
-        title: "Nonfiction Ghostwriting for Healing & Legacy",
-        description: "Turning lived experiences into memoirs, books, and writing that preserve truth and foster healing."
-      },
-      {
-        icon: Lightbulb,
-        title: "Digital Space Management",
-        description: "Helping with the digital clutter such as email management and automations, creating sustainable systems that restore calm and clarity."
-      }
-    ]
-  },
-  {
-    category: "Story for Growth",
+    category: "For Growth",
     subtitle: "For career, creative, and business advancement through storytelling + systems",
     services: [
       {
@@ -31,18 +16,37 @@ const serviceCategories = [
       {
         icon: Brain,
         title: "ADHD Creatives & Entrepreneurs Support",
-        description: "Branding and executive support designed to align with neurodiverse minds and business growth."
+        description: "Branding and executive support designed to align with neurodiverse minds and business growth.",
+        highlight: "worked with over 10 ADHD clients"
       }
     ]
   },
   {
-    category: "Story for Community",
+    category: "For Self",
+    services: [
+      {
+        icon: BookOpen,
+        title: "Nonfiction Ghostwriting for Healing & Legacy",
+        description: "Turning lived experiences into memoirs, books, and writing that preserve truth and foster healing.",
+        highlight: "ghostwritten over 30 nonfiction works"
+      },
+      {
+        icon: Lightbulb,
+        title: "Digital Space Management",
+        description: "Helping with the digital clutter such as email management and automations, creating sustainable systems that restore calm and clarity.",
+        highlight: "80% satisfaction"
+      }
+    ]
+  },
+  {
+    category: "For Community",
     subtitle: "Shared learning, leadership, and insightful conversations",
     services: [
       {
         icon: Users,
         title: "Consulting & Speaking",
-        description: "Workshops, talks, and consulting that connect storytelling with micro–mental health support and creative strategy for groups, teams, and communities."
+        description: "Workshops, talks, and consulting that connect storytelling with micro–mental health support and creative strategy for groups, teams, and communities.",
+        highlight: "200 newsletter thought pieces"
       }
     ]
   }
@@ -53,8 +57,8 @@ export const ServicesSection = () => {
     <section className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">What we do</h2>
-          <p className="text-xl font-avenir text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-playfair font-bold mb-4">What We Do</h2>
+          <p className="text-xl font-avenir text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Comprehensive support at the intersection of storytelling, psychology, and creative strategy
           </p>
         </div>
@@ -93,7 +97,7 @@ export const ServicesSection = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <CardDescription className="font-avenir text-muted-foreground leading-relaxed text-base">
+                      <CardDescription className="font-avenir text-muted-foreground leading-relaxed text-lg">
                         {service.description}
                       </CardDescription>
                     </CardContent>
