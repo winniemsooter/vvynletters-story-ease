@@ -46,6 +46,10 @@ export const BlogCard = ({ post }: BlogCardProps) => {
             src={post.featuredImage || "/placeholder.svg"}
             alt={post.featuredImageAlt || post.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            decoding="async"
+            width={1280}
+            height={720}
           />
         </div>
         
