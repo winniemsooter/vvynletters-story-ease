@@ -1,5 +1,24 @@
 {
+  "functions": {
+    "api/meta-tags.js": {
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
-    { "source": "/((?!.*\\..*|api).*)", "destination": "/" }
+    {
+      "source": "/blog/:slug",
+      "destination": "/api/meta-tags?slug=:slug",
+      "has": [
+        {
+          "type": "header",
+          "key": "user-agent",
+          "value": "(?i).*(bot|crawler|spider|facebookexternalhit|twitterbot|linkedinbot|whatsapp|telegrambot|skypeuripreview|slackbot|discordbot).*"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }

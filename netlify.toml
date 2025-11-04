@@ -1,0 +1,16 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Redirect blog posts to meta tag generator for social media bots
+[[redirects]]
+  from = "/blog/:slug"
+  to = "/.netlify/functions/meta-tags?slug=:slug"
+  status = 200
+  conditions = {User-Agent = ["facebookexternalhit*", "Twitterbot*", "LinkedInBot*", "WhatsApp*", "TelegramBot*", "SkypeUriPreview*", "SlackBot*", "DiscordBot*"]}
+
+# Default SPA fallback for all other routes
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
