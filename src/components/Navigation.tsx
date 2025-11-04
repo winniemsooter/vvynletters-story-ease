@@ -2,8 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import vvynlettersLogo from "@/assets/vvynletters-logo.png";
-
 export const Navigation = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
@@ -31,7 +29,7 @@ export const Navigation = () => {
               className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
             >
               <img 
-                src={vvynlettersLogo} 
+                src="/vvyn_letters_logo.png" 
                 alt="VVYNLETTERS Logo" 
                 className="h-8 w-8 object-contain"
               />

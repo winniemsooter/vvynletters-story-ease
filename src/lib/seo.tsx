@@ -169,7 +169,7 @@ export const generateBlogPostStructuredData = (post: {
       "name": "VVYNLETTERS",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://vvynletters.com/og-image.png"
+        "url": "https://vvynletters.com/vvyn_letters_logo.png"
       }
     },
     "mainEntityOfPage": {
