@@ -9,6 +9,8 @@ import { Badge } from '@/components/ui/badge';
 import { Search, Filter } from 'lucide-react';
 import { BlogPost, BlogCategory } from '@/types/blog';
 import { wordpressService } from '@/services/wordpress';
+import { SEO } from '@/lib/seo';
+import { getFullUrl, getImageUrl } from '@/lib/url-utils';
 
 const Blog = () => {
   const [posts, setPosts] = useState<BlogPost[]>([]);
@@ -74,6 +76,16 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-gradient-subtle">
+      {/* SEO Meta Tags for Blog Page */}
+      <SEO
+        title="Blog - Stories & Insights | VVYNLETTERS"
+        description="Explore our collection of stories, insights, and resources on storytelling, mental health support, and creative entrepreneurship."
+        image={getImageUrl()}
+        imageAlt="VVYNLETTERS Blog - Stories & Insights"
+        url={getFullUrl('blog')}
+        type="website"
+      />
+      
       <Navigation />
       
       <main className="pt-20">

@@ -10,6 +10,9 @@ import { BlogPost as BlogPostType, BlogCategory, BlogTag } from '@/types/blog';
 import { wordpressService } from '@/services/wordpress';
 import { BlogPostSkeleton } from '@/components/BlogPostSkeleton';
 import { calculateReadingTime, formatReadingTime } from '@/lib/reading-time';
+import { SEO, generateBlogPostStructuredData, injectStructuredData } from '@/lib/seo';
+import { getCurrentUrl, getImageUrl, stripHtml, truncateText } from '@/lib/url-utils';
+import { debugMetaTags, validateSocialMetaTags } from '@/lib/meta-debug';
 
 const BlogPost = () => {
   const { slug, id } = useParams<{ slug?: string; id?: string }>();
@@ -66,6 +69,36 @@ const BlogPost = () => {
       day: 'numeric'
     });
   };
+
+  // Generate current URL for the post
+  const currentUrl = getCurrentUrl();
+
+  // Generate SEO data when post is loaded
+  useEffect(() => {
+    if (post) {
+      const cleanDescription = stripHtml(post.excerpt);
+      
+      // Generate and inject structured data
+      const structuredData = generateBlogPostStructuredData({
+        title: post.title,
+        description: truncateText(cleanDescription),
+        image: post.featuredImage,
+        url: currentUrl,
+        publishedTime: post.date,
+        author: 'Winifred Liam' // You can make this dynamic if you have author data
+      });
+      
+      injectStructuredData(structuredData);
+
+      // Debug meta tags in development
+      if (import.meta.env.DEV) {
+        setTimeout(() => {
+          debugMetaTags();
+          validateSocialMetaTags();
+        }, 100);
+      }
+    }
+  }, [post, currentUrl]);
 
 
 
@@ -130,8 +163,29 @@ const BlogPost = () => {
     );
   }
 
+  // Get tag names for SEO
+  const tagNames = post?.tags.map(tagId => {
+    const tag = tags.find(t => t.id === tagId);
+    return tag ? tag.name : '';
+  }).filter(Boolean) || [];
+
   return (
     <div className="min-h-screen bg-gradient-subtle">
+      {/* Dynamic SEO Meta Tags */}
+      {post && (
+        <SEO
+          title={`${post.title} | VVYNLETTERS`}
+          description={truncateText(stripHtml(post.excerpt))}
+          image={getImageUrl(post.featuredImage)}
+          imageAlt={post.featuredImageAlt || post.title}
+          url={currentUrl}
+          type="article"
+          publishedTime={post.date}
+          author="Winifred Liam"
+          tags={tagNames}
+        />
+      )}
+      
       <Navigation />
       
       <main className="pt-20">
