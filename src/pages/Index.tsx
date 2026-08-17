@@ -1,56 +1,46 @@
-import { Navigation } from "@/components/Navigation";
-import { HeroSection } from "@/components/HeroSection";
-import { AboutSection } from "@/components/AboutSection";
-import { ServicesSection } from "@/components/ServicesSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { PerfectForSection } from "@/components/PerfectForSection";
-import { ContactSection } from "@/components/ContactSection";
-import { Footer } from "@/components/Footer";
+import { SiteNav } from "@/components/wyn/SiteNav";
+import { Hero } from "@/components/wyn/Hero";
+import { Proof } from "@/components/wyn/Proof";
+import { Work } from "@/components/wyn/Work";
+import { Books } from "@/components/wyn/Books";
+import { Services } from "@/components/wyn/Services";
+import { Voice } from "@/components/wyn/Voice";
+import { Process } from "@/components/wyn/Process";
+import { About } from "@/components/wyn/About";
+import { Testimonials } from "@/components/wyn/Testimonials";
+import { Faq } from "@/components/wyn/Faq";
+import { Contact } from "@/components/wyn/Contact";
+import { SiteFooter } from "@/components/wyn/SiteFooter";
 import { SEO } from "@/lib/seo";
-import { getFullUrl, getImageUrl } from "@/lib/url-utils";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      {/* SEO Meta Tags for Home Page */}
+    <div className="min-h-screen bg-background">
       <SEO
-        title="VVYNLETTERS - Storytelling Meets Purpose | Medical School Applications & Creative Consulting"
-        description="Expert storytelling consultant helping with medical school applications, ADHD support, and creative strategy. 90% success rate. Book a consultation today."
-        image={getImageUrl()}
-        imageAlt="VVYNLETTERS — Storytelling Meets Purpose"
-        url={getFullUrl()}
+        title="Wynletters — Ghostwriting for Books & Thought Leadership"
+        description="Ghostwriting for people with something worth saying. Books, thought leadership, and business writing for founders, experts, consultants, and executives."
+        url="https://vvynletters-story-ease.lovable.app/"
         type="website"
       />
-      
-      <Navigation />
-      
+
+      <SiteNav />
+
       <main>
-        <div id="hero">
-          <HeroSection />
-        </div>
-        
-        <div id="about">
-          <AboutSection />
-        </div>
-        
-        <div id="services">
-          <ServicesSection />
-        </div>
-        
-        <div id="testimonials">
-          <TestimonialsSection />
-        </div>
-        
-        <div id="perfect-for">
-          <PerfectForSection />
-        </div>
-        
-        <div id="contact">
-          <ContactSection />
-        </div>
+        <Hero />
+        <Proof />
+        <Work />
+        <Books />
+        <Services />
+        <Voice />
+        <Process />
+        <About />
+        {/* Remove <Testimonials /> until real client quotes are available */}
+        <Testimonials />
+        <Faq />
+        <Contact />
       </main>
-      
-      <Footer />
+
+      <SiteFooter />
     </div>
   );
 };

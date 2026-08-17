@@ -15,6 +15,8 @@ export default {
     extend: {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
+        'display': ['Instrument Serif', 'Georgia', 'serif'],
+        'sans': ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         'avenir': ['Avenir', 'Avenir Next', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       colors: {
