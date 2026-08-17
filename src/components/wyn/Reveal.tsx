@@ -4,11 +4,10 @@ interface RevealProps {
   children: ReactNode;
   className?: string;
   delay?: number;
-  as?: "div" | "section" | "li" | "article";
 }
 
-export const Reveal = ({ children, className = "", delay = 0, as = "div" }: RevealProps) => {
-  const ref = useRef<HTMLElement | null>(null);
+export const Reveal = ({ children, className = "", delay = 0 }: RevealProps) => {
+  const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -27,15 +26,13 @@ export const Reveal = ({ children, className = "", delay = 0, as = "div" }: Reve
     return () => observer.disconnect();
   }, []);
 
-  const Tag = as as keyof JSX.IntrinsicElements;
-
   return (
-    <Tag
-      ref={ref as never}
+    <div
+      ref={ref}
       className={`reveal ${visible ? "is-visible" : ""} ${className}`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
-    </Tag>
+    </div>
   );
 };
